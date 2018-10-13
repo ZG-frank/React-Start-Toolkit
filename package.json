@@ -1,0 +1,26 @@
+{
+  "name": "react-start-toolkit",
+  "version": "1.0.0",
+  "description": "A React Start Toolkit by React 16 + React-router 4 + Redux + Webpack 4 + Babel 7 + Ant Design",
+  "scripts": {
+    "dev": "webpack-dev-server --config build/dev.js --progress --hot --open",
+    "build": "webpack --config build/prod.js --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZG-frank/react-start-toolkit.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "toolkit"
+  ],
+  "author": "frankzgzhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZG-frank/react-start-toolkit/issues"
+  },
+  "homepage": "https://github.com/ZG-frank/react-start-toolkit#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
