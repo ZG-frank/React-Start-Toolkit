@@ -8,7 +8,8 @@ const Dashboard = Loadable({
 });
 const UserList = Loadable({
     loader: () => import('../views/Admin/UserManage/UserList'),
-    loading: DelayLoading, delay: 300
+    loading: DelayLoading, 
+    delay: 300
 });
 const UserEdit = Loadable({
     loader: () => import('../views/Admin/UserManage/UserEdit'),
