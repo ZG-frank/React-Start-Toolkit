@@ -3,8 +3,8 @@ A React Start Toolkit by React 16 + React-router 4 + Redux + Webpack 4 + Babel 7
 
 ![react-start-toolkit](./React.png)
 ---------------------------------------------------------------
-[![React](https://img.shields.io/badge/react-^16.2.0-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
-[![Ant Design](https://img.shields.io/badge/ant--design-^3.0.3-yellowgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
+[![React](https://img.shields.io/badge/react-^16.4.2-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
+[![Ant Design](https://img.shields.io/badge/ant--design-^3.9.0-yellowgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 [![Mobx](https://img.shields.io/badge/redux-^4.0.0-orange.svg?style=flat-square)](https://github.com/reduxjs/redux)
 
 **演示地址：**[https://beverle-y.github.io/react-redux-starter-kit](https://beverle-y.github.io/react-redux-starter-kit/)
