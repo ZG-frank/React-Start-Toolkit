@@ -12,7 +12,7 @@ module.exports = {
         ...baseConfig.output, 
         path: MY_PATH.BUILD_PATH,
         filename: 'js/[name].[hash].js',
-        chunkFilename: 'js/[name].[chunkhash].js',
+        chunkFilename: 'js/[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -20,9 +20,14 @@ module.exports = {
             {
                 test: /(\.less|\.css)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'less-loader',
+                    { loader : MiniCssExtractPlugin.loader }, 
+                    { loader : "css-loader" }, 
+                    { 
+                        loader : "less-loader",
+                        options: {
+                            javascriptEnabled: true
+                        }
+                    }
                 ],
             },
         ]
@@ -31,8 +36,8 @@ module.exports = {
         ...baseConfig.plugins,
         new MiniCssExtractPlugin({
             //提取为外部css代码
-            filename: '[name].[hash].css',
-            chunkFilename: '[id].[hash].css'
+            filename: 'css/main.[chunkhash:5].css',
+            chunkFilename: 'css/main.[contenthash:5].css'
         }),
         new CleanWebpackPlugin(['dist'], {
             // Default: webpack位置所在的文件夹

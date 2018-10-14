@@ -26,12 +26,12 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    outputPath: 'images'
+                    outputPath: 'images/'
                 }
             },
             {
                 test: /\.(woff|woff2|ttf|eot)(\?[tv]=[\d.]+)*$/,
-                use: ['file-loader?name=[name].[ext]']
+                use: ['file-loader?name=fonts/[name].[ext]']
             }
         ]
     },
