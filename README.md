@@ -8,7 +8,7 @@ A React Start Toolkit by React 16 + React-router 4 + Redux + Webpack 4 + Babel 7
 [![Redux](https://img.shields.io/badge/redux-^4.0.0-orange.svg?style=flat-square)](https://github.com/reduxjs/redux)
 [![Webpack](https://img.shields.io/badge/webpack-^4.19.1-yellow.svg?style=flat-square)](https://github.com/webpack/webpack)
 [![Babel](https://img.shields.io/badge/babel-^7.0.0-blue.svg?style=flat-square)](https://github.com/babel/babel)
-[![React Router](https://img.shields.io/badge/react-router-^4.3.1-lightgrey.svg?style=flat-square)](https://github.com/ReactTraining/react-router)
+[![React Router](https://img.shields.io/badge/react--router-^4.3.1-lightgrey.svg?style=flat-square)](https://github.com/ReactTraining/react-router)
 
 **演示地址：**[https://beverle-y.github.io/react-redux-starter-kit](https://beverle-y.github.io/react-redux-starter-kit/)
 
