@@ -1,5 +1,6 @@
 # react-start-toolkit
 A React Start Toolkit by React 16 + React-router 4 + Redux + Webpack 4 + Babel 7 + Ant Design
+
 ![react-start-toolkit](./React.png)
 ---------------------------------------------------------------
 [![React](https://img.shields.io/badge/react-^16.2.0-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
@@ -34,12 +35,12 @@ npm run build
 ~~~
 npm run server
 因为采用了BrowserRouter，出于浏览器安全的原因，build之后的文件需要启动服务器来访问
-这里使用了express来启用服务器访问，默认是8090端口并返回dist文件夹中的index.html
+这里使用了express来启用服务器，默认是8090端口并返回dist文件夹中的index.html
 ~~~
 
 ### Todo
 
-- [] 内容更丰富
-- [] 优化Webpack配置
-- [] 加入Mobx版
-- [] 加入原生Context API版
+- [ ] 内容更丰富
+- [ ] 优化Webpack配置
+- [ ] 加入Mobx版
+- [ ] 加入原生Context API版
