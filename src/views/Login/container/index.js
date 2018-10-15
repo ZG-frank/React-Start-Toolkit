@@ -15,27 +15,27 @@ import './index.less';
 )
 class Login extends Component {
     constructor() {
-        super()
-
+        super();
     }
 
     submit = (form, changeLoading) => {
         form.validateFields((err, values) => {
             if (!err) {
-                changeLoading(true)
+                changeLoading(true);
                 this.timer = setTimeout(() => {
-                    changeLoading(false)
-                    let { userName, password } = values
+                    changeLoading(false);
+                    let { userName, password } = values;
+
                     if (userName == 'admin' && password == 'admin') {
-                        let message = `M&${userName}&${password}`
-                        let key = 'react_starter'
-                        let session = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(message, key))
+                        let message = `M&${userName}&${password}`;
+                        let key = 'react_starter';
+                        let session = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(message, key));
                         Cookies.set('JSESSIONID', session, {expires: 1, path: '/'});
                         Cookies.set('userName', userName, {expires: 1, path: '/'});
-                        this.props.ROOT_ChangeUser({name: userName})
-                        this.props.history.push('/dashboard')
+                        this.props.ROOT_ChangeUser({name: userName});
+                        this.props.history.push('/dashboard');
                     } else {
-                        message.error('账号：admin ； 密码：admin')
+                        message.error('账号：admin ； 密码：admin');
                     }
                 }, 1500)
             }
@@ -43,7 +43,7 @@ class Login extends Component {
     }
 
     componentWillUnmount() {
-        clearTimeout(this.timer)
+        clearTimeout(this.timer);
     }
 
     render() {
