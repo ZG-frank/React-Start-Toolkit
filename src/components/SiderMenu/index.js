@@ -15,21 +15,21 @@ class SiderMenu extends Component {
     selectKey = () =>{
         let keys = [];
         keys.push(this.props.history.location.pathname);
-        this.setState({keys:keys});
+        this.setState({ keys });
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.selectKey();
-    }
-
-    onSelect = ({ key }) =>{
-        this.props.history.push(key);
     }
 
     componentWillReceiveProps (nextProps){
         if (this.props.location.pathname != nextProps.location.pathname) {
             this.selectKey();
         }
+    }
+
+    onSelect = ({ key }) =>{
+        this.props.history.push(key);
     }
     
     render() {
