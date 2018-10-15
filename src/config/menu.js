@@ -1,24 +1,24 @@
 export default [{
-    key   : '/dashboard',
+    key   : 'dashboard',
     title : 'Dashboard',
     icon  : 'dashboard'
 }, {
-    key   : '/postManage',
+    key   : 'postManage',
     title : 'Posts',
     icon  : 'read'
 }, {
-    key   : '/userManage',
+    key   : 'userManage',
     title : 'Users',
     icon  : 'team',
     list  : [{
-        key   : '/userList',
+        key   : 'userList',
         title : '用户列表'
     }, {
-        key   : '/userEdit',
+        key   : 'userEdit',
         title : '用户管理'
     }]
 }, {
-    key   : '/tagManage',
+    key   : 'tagManage',
     title : 'Tags',
     icon  : 'read'
 }]

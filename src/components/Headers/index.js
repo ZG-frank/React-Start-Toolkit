@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Layout, Menu, Icon } from 'antd';
 import './index.less';
 
-const Header = Layout.Header;
-const SubMenu = Menu.SubMenu;
+const { Header } = Layout;
+const { SubMenu } = Menu;
 
 class Headers extends Component {
 

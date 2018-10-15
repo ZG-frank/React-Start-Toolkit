@@ -2,35 +2,48 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { Layout, Menu, Icon } from 'antd';
 import menuConfig from '@/config/menu';
+import routes from '@/config/routes';
 import './index.less';
 
-const Sider = Layout.Sider;
-const SubMenu = Menu.SubMenu;
+const { Sider } = Layout;
+const { SubMenu } = Menu;
 
 @withRouter
 class SiderMenu extends Component {
     state = {
-        keys: []
+        keys: [],
+        openKeys: []
     }
 
-    selectKey = () =>{
-        let keys = [];
-        keys.push(this.props.history.location.pathname);
-        this.setState({ keys });
+    selectKey = () => {
+        let url = this.props.history.location.pathname,
+            route = routes.filter(item => item.path === url)[0];
+        
+        if (route) {
+            this.setState({ 
+                keys: [route.key],
+                openKeys: route.parent ? [route.parent] : []
+            });
+        }
     }
 
     componentDidMount() {
         this.selectKey();
     }
 
-    componentWillReceiveProps (nextProps){
+    componentWillReceiveProps(nextProps) {
         if (this.props.location.pathname != nextProps.location.pathname) {
             this.selectKey();
         }
     }
 
-    onSelect = ({ key }) =>{
-        this.props.history.push(key);
+    onSelect = (selected) => {
+        let url = routes.filter(item => item.key === selected.key)[0].path;
+        this.props.history.push(url);
+    }
+
+    onOpenChange = (openKeys) => {
+        this.setState({ openKeys });
     }
     
     render() {
@@ -48,7 +61,9 @@ class SiderMenu extends Component {
                 
                 <Menu 
                     mode="inline" 
-                    onSelect={this.onSelect} 
+                    onSelect={this.onSelect}
+                    openKeys={this.state.openKeys}
+                    onOpenChange={this.onOpenChange}
                     selectedKeys={this.state.keys}
                 >
                     {
@@ -64,7 +79,7 @@ class SiderMenu extends Component {
                             }>
                                 {
                                     item.list.map(listItem =>
-                                        <Menu.Item key={item.key + listItem.key}>
+                                        <Menu.Item key={listItem.key}>
                                             <span>{listItem.title}</span>
                                         </Menu.Item>
                                     )

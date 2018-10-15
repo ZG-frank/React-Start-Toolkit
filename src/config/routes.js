@@ -28,18 +28,25 @@ const tagManage = Loadable({
 });
 
 export default [{
+    'key': 'dashboard',
     'path': '/dashboard',
     'component': Dashboard
 }, {
+    'key': 'userList',
     'path': '/userManage/userList',
+    'parent': 'userManage',
     'component': UserList
 }, {
+    'key': 'userEdit',
     'path': '/userManage/userEdit',
+    'parent': 'userManage',
     'component': UserEdit
 }, {
+    'key': 'postManage',
     'path': '/postManage',
     'component': postManage
 }, {
+    'key': 'tagManage',
     'path': '/tagManage',
     'component': tagManage
 }]

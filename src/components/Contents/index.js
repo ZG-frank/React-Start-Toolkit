@@ -16,7 +16,7 @@ class Contents extends Component {
                     {
                         routes.map(item =>
                             <Route 
-                                key={item.path} 
+                                key={item.key} 
                                 path={item.path} 
                                 component={item.component} 
                                 exact
