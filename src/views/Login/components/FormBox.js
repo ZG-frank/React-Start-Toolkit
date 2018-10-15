@@ -41,13 +41,13 @@ class FromBox extends Component {
                         getFieldDecorator('password', {
                             rules: [{ 
                                 required: true, 
-                                message: '密码是123456' 
+                                message: '密码是admin' 
                             }],
                         })(
                             <Input 
                                 prefix={<span className='font icon-mima' style={{ color: 'rgba(0,0,0,.25)' }}></span>} 
                                 type="password" 
-                                placeholder="123456"
+                                placeholder="admin"
                             />
                         )
                     }

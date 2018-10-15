@@ -26,16 +26,16 @@ class Login extends Component {
                 this.timer = setTimeout(() => {
                     changeLoading(false)
                     let { userName, password } = values
-                    if (userName == 'admin' && password == '123456') {
+                    if (userName == 'admin' && password == 'admin') {
                         let message = `M&${userName}&${password}`
                         let key = 'react_starter'
                         let session = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(message, key))
                         Cookies.set('JSESSIONID', session, {expires: 1, path: '/'});
                         Cookies.set('userName', userName, {expires: 1, path: '/'});
                         this.props.ROOT_ChangeUser({name: userName})
-                        this.props.history.push('/home')
+                        this.props.history.push('/dashboard')
                     } else {
-                        message.error('账号：admin ； 密码：123456')
+                        message.error('账号：admin ； 密码：admin')
                     }
                 }, 1500)
             }
