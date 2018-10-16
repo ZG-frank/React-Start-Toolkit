@@ -15,34 +15,34 @@ class SiderMenu extends Component {
         openKeys: []
     }
 
-    selectKey = () => {
+    getSelectedKey = () => {
         let url = this.props.history.location.pathname,
             route = routes.filter(item => item.path === url)[0];
-        
+        // console.log(url,route.key)
         if (route) {
             this.setState({ 
-                keys: [route.key],
+                keys: route.key ? [route.key] : [],
                 openKeys: route.parent ? [route.parent] : []
             });
         }
     }
 
     componentDidMount() {
-        this.selectKey();
+        this.getSelectedKey();
     }
 
     componentWillReceiveProps(nextProps) {
         if (this.props.location.pathname != nextProps.location.pathname) {
-            this.selectKey();
+            this.getSelectedKey();
         }
     }
 
-    onSelect = (selected) => {
+    handleMenuSelect = (selected) => {
         let url = routes.filter(item => item.key === selected.key)[0].path;
         this.props.history.push(url);
     }
 
-    onOpenChange = (openKeys) => {
+    handleSubMenuChange = (openKeys) => {
         this.setState({ openKeys });
     }
     
@@ -61,10 +61,10 @@ class SiderMenu extends Component {
                 
                 <Menu 
                     mode="inline" 
-                    onSelect={this.onSelect}
-                    openKeys={this.state.openKeys}
-                    onOpenChange={this.onOpenChange}
+                    onSelect={this.handleMenuSelect}
                     selectedKeys={this.state.keys}
+                    openKeys={this.state.openKeys}
+                    onOpenChange={this.handleSubMenuChange}
                 >
                     {
                         menuConfig.map(item =>

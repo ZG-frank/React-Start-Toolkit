@@ -1,5 +1,5 @@
 export default [{
-    key   : 'dashboard',
+    key   : 'index',
     title : 'Dashboard',
     icon  : 'dashboard'
 }, {
