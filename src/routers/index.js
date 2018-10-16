@@ -19,7 +19,7 @@ class Routers extends Component {
             }
         } else {
             if (Cookies.get('JSESSIONID')) {
-                history.replace('/dashboard');
+                history.replace('/');
             }
         }
     }
