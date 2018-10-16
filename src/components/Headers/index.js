@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Icon } from 'antd';
+import { connect } from 'react-redux';
+import Cookies from 'js-cookie';
+import { bindActionCreators } from 'redux';
+import { ROOT_ChangeUser } from '@/store/ROOT/action';
 import './index.less';
 
 const { Header } = Layout;
 const { SubMenu } = Menu;
 
+@connect(
+    state => ({ ...state.ROOT }),
+    dispatch => bindActionCreators({ ROOT_ChangeUser }, dispatch)
+)
 class Headers extends Component {
+
+    componentDidMount() {
+        let { ROOT_userInfo } = this.props;
+
+        if (ROOT_userInfo.name === '') {
+            this.props.ROOT_ChangeUser({
+                name: Cookies.get('userName')
+            });
+        }
+    }
 
     render() {
         return (
@@ -25,7 +43,7 @@ class Headers extends Component {
                             title={
                             <span>
                                 <Icon className="font-18" type="user" />
-                                admin
+                                {this.props.ROOT_userInfo.name}
                             </span>}
                         >
                             <Menu.Item key="logout" onClick={this.props.logout}>
