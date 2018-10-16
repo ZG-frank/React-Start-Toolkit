@@ -3,10 +3,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { message } from 'antd';
 import CryptoJS from 'crypto-js';
-import FormBox from '../components/FormBox';
 import Cookies from 'js-cookie';
+import FormBox from '../components/FormBox';
 import * as action from '../store/action';
 import * as ROOT_action from '@/store/ROOT/action';
+
 import './index.less';
 
 @connect(
@@ -26,14 +27,16 @@ class Login extends Component {
                     changeLoading(false);
                     let { userName, password } = values;
 
-                    if (userName == 'admin' && password == 'admin') {
-                        let message = `M&${userName}&${password}`;
-                        let key = 'react_starter';
-                        let session = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(message, key));
+                    if (userName === 'admin' && password === 'admin') {
+                        let message = `Guest&${userName}&${password}`;
+                        let sessionKey = 'react_start_toolkit';
+                        let session = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(message, sessionKey));
+
                         Cookies.set('JSESSIONID', session, {expires: 1, path: '/'});
                         Cookies.set('userName', userName, {expires: 1, path: '/'});
-                        this.props.ROOT_ChangeUser({name: userName});
-                        this.props.history.push('/dashboard');
+
+                        this.props.ROOT_ChangeUser({ name: userName });
+                        this.props.history.push('/');
                     } else {
                         message.error('账号：admin ； 密码：admin');
                     }
