@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Icon } from 'antd';
 import { connect } from 'react-redux';
-import Cookies from 'js-cookie';
 import { bindActionCreators } from 'redux';
+import { Layout, Menu, Icon } from 'antd';
+import Cookies from 'js-cookie';
 import { ROOT_ChangeUser } from '@/store/ROOT/action';
 import './index.less';
 
