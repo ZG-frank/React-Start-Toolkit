@@ -18,7 +18,7 @@ class SiderMenu extends Component {
     getSelectedKey = () => {
         let url = this.props.history.location.pathname,
             route = routes.filter(item => item.path === url)[0];
-        // console.log(url,route.key)
+
         if (route) {
             this.setState({ 
                 keys: route.key ? [route.key] : [],
