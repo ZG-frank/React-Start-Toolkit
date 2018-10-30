@@ -21,7 +21,7 @@ git clone https://github.com/ZG-frank/react-start-toolkit.git
 
 #### Install
 ~~~
-yarn install
+yarn install or npm install
 ~~~
 
 #### Run
