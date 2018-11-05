@@ -21,7 +21,7 @@ git clone https://github.com/ZG-frank/react-start-toolkit.git
 
 #### Install
 ~~~
-yarn install
+yarn install or npm install
 ~~~
 
 #### Run
@@ -44,6 +44,7 @@ npm run server
 ### Todo
 
 - [ ] 内容更丰富
+- [ ] 优化组件和工程目录
 - [ ] 优化Webpack配置
 - [ ] 加入Mobx版
 - [ ] 加入原生Context API版
