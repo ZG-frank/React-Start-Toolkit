@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import Layouts from '../views/Layouts';
-import Login from '../views/Login';
+import { Login } from '../views/Login';
 import Cookies from 'js-cookie';
 
 @withRouter

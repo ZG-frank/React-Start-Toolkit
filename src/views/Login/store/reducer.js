@@ -2,7 +2,7 @@ const initState = {
     loading: false
 }
 
-const Login = (state = initState, action) =>{
+const loginReducer = (state = initState, action) =>{
     const { loading } = action;
 
     switch (action.type) {
@@ -16,4 +16,4 @@ const Login = (state = initState, action) =>{
     }
 }
 
-export default Login
+export default loginReducer

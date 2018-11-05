@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import ROOT from './ROOT/reducer';
-import Login from '../views/Login/store/reducer';
+import { loginReducer } from '../views/Login';
 
 const reducers = combineReducers({
     ROOT,
-    Login
+    Login: loginReducer
 })
 
 export default reducers
