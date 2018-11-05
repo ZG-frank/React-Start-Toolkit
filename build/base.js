@@ -58,6 +58,9 @@ module.exports = {
         extensions: ['*', '.js', '.jsx', '.json', '.less', '.css']
     },
     optimization: {
+        runtimeChunk: {
+            name: 'manifest'
+        },
         splitChunks: {
             cacheGroups: {
                 commons: {
