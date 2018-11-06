@@ -1,13 +1,3 @@
-import React, { Component } from 'react';
+import TagManage from './container';
 
-class TagManage extends Component {
-    render() {
-        return (
-            <div className='tag-manage'>
-                TagManage
-            </div>
-        )
-    }
-}
-
-export default TagManage
+export { TagManage }

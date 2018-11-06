@@ -1,13 +1,3 @@
-import React, { Component } from 'react';
+import UserList from './container';
 
-class UserList extends Component {
-    render() {
-        return (
-            <div className='user-list'>
-                UserList
-            </div>
-        )
-    }
-}
-
-export default UserList
+export { UserList }

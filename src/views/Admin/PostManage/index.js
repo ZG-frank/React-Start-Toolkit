@@ -1,13 +1,3 @@
-import React, { Component } from 'react';
+import PostManage from './container';
 
-class PostManage extends Component {
-    render() {
-        return (
-            <div className='post-manage'>
-                PostManage
-            </div>
-        )
-    }
-}
-
-export default PostManage
+export { PostManage }

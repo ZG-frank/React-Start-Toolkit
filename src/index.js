@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import Routers from './routers';
-import store from './store';
+import Routers from '@/components/Routers';
+import store from '@/store';
 
 class App extends Component {
     render() {

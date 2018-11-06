@@ -1,2 +1,2 @@
-import Layouts from './container'
-export default Layouts
+import Layouts from './container';
+export { Layouts }

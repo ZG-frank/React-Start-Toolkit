@@ -2,27 +2,27 @@ import Loadable from 'react-loadable';
 import DelayLoading from '../components/DelayLoading';
 
 const Dashboard = Loadable({
-    loader: () => import('../views/Admin/Dashboard'), 
+    loader: () => import('../views/Admin/Dashboard/container'), 
     loading: DelayLoading, 
     delay: 2000
 });
 const UserList = Loadable({
-    loader: () => import('../views/Admin/UserManage/UserList'),
+    loader: () => import('../views/Admin/UserManage/UserList/container'),
     loading: DelayLoading, 
     delay: 2000
 });
 const UserEdit = Loadable({
-    loader: () => import('../views/Admin/UserManage/UserEdit'),
+    loader: () => import('../views/Admin/UserManage/UserEdit/container'),
     loading: DelayLoading, 
     delay: 2000
 });
-const postManage = Loadable({
-    loader: () => import('../views/Admin/postManage'), 
+const PostManage = Loadable({
+    loader: () => import('../views/Admin/PostManage/container'), 
     loading: DelayLoading, 
     delay: 2000
 });
-const tagManage = Loadable({
-    loader: () => import('../views/Admin/tagManage'), 
+const TagManage = Loadable({
+    loader: () => import('../views/Admin/TagManage/container'), 
     loading: DelayLoading, 
     delay: 2000
 });
@@ -44,9 +44,9 @@ export default [{
 }, {
     'key': 'postManage',
     'path': '/postManage',
-    'component': postManage
+    'component': PostManage
 }, {
     'key': 'tagManage',
     'path': '/tagManage',
-    'component': tagManage
+    'component': TagManage
 }]
