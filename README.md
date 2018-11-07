@@ -44,7 +44,7 @@ npm run server
 ### Todo
 
 - [ ] 内容更丰富
-- [ ] 优化组件和工程目录
+- [√] 优化组件和工程目录
 - [ ] 优化Webpack配置
 - [ ] 加入Mobx版
 - [ ] 加入原生Context API版
