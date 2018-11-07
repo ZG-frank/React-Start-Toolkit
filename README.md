@@ -1,6 +1,6 @@
 # React-Start-Toolkit
 React Project Start Toolkit by React 16 + React-router v4 + Redux + Webpack 4 + Babel 7 + Ant Design + Dynamic import
-
+---------------------------------------------------------------
 使用目前较新的技术栈搭建的 React 脚手架，包括 React 16.4.2、React-router v4、Redux、Webpack 4、Babel 7、路由动态分割和导入等。
 
 ![react-start-toolkit](./React.png)
