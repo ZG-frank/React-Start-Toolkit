@@ -6,12 +6,14 @@ React Project Start Toolkit by React 16 + React-router v4 + Redux + Webpack 4 + 
 <div align=center> <img width="150" height="150" src="./React.png" /></div>
 
 ---------------------------------------------------------------
-[![React](https://img.shields.io/badge/react-^16.4.2-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
-[![Ant Design](https://img.shields.io/badge/ant--design-^3.9.0-yellowgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![Redux](https://img.shields.io/badge/redux-^4.0.0-orange.svg?style=flat-square)](https://github.com/reduxjs/redux)
-[![Webpack](https://img.shields.io/badge/webpack-^4.19.1-yellow.svg?style=flat-square)](https://github.com/webpack/webpack)
-[![Babel](https://img.shields.io/badge/babel-^7.0.0-blue.svg?style=flat-square)](https://github.com/babel/babel)
-[![React Router](https://img.shields.io/badge/react--router-^4.3.1-lightgrey.svg?style=flat-square)](https://github.com/ReactTraining/react-router)
+<div align="center">
+  <a href="https://github.com/facebook/react"><img src="https://img.shields.io/badge/react-^16.4.2-brightgreen.svg?style=flat-square" /></a>
+  <a href="https://github.com/webpack/webpack"><img src="https://img.shields.io/badge/webpack-^4.19.1-yellow.svg?style=flat-square" /></a>
+  <a href="https://github.com/reduxjs/redux"><img src="https://img.shields.io/badge/redux-^4.0.0-orange.svg?style=flat-square" /></a>
+  <a href="https://github.com/ReactTraining/react-router"><img src="https://img.shields.io/badge/react--router-^4.3.1-lightgrey.svg?style=flat-square" /></a>
+  <a href="https://github.com/ant-design/ant-design"><img src="https://img.shields.io/badge/ant--design-^3.9.0-yellowgreen.svg?style=flat-square" /></a>
+  <a href="https://github.com/babel/babel"><img src="https://img.shields.io/badge/babel-^7.0.0-blue.svg?style=flat-square" /></a>
+</div>
 
 **演示地址：**[https://ZG-frank.github.io/react-start-toolkit](https://ZG-frank.github.io/react-start-toolkit/)
 
