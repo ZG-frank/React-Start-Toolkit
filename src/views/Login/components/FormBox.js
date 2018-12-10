@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import CryptoJS from 'crypto-js';
 import Cookies from 'js-cookie';
 import { Form, Input, Button, Icon, message } from 'antd';
@@ -8,6 +9,8 @@ import * as action from '../store/action';
 import * as ROOT_action from '@/store/ROOT/action';
 
 const FormItem = Form.Item;
+
+@withRouter
 
 @connect(
     state => ({ ...state.Login }),
@@ -25,9 +28,9 @@ class FromBox extends Component {
             if (!err) {
                 this.props.changeLoading(true);
                 this.timer = setTimeout(() => {
-                    this.props.changeLoading(false);
                     let { userName, password } = values;
 
+                    this.props.changeLoading(false);
                     if (userName === 'admin' && password === 'admin') {
                         let message = `Guest&${userName}&${password}`;
                         let sessionKey = 'react_start_toolkit';
@@ -55,7 +58,7 @@ class FromBox extends Component {
         const { loading } = this.props;
 
         return (
-            <Form>
+            <Form className="login-form">
                 <FormItem hasFeedback>
                     {
                         getFieldDecorator('userName', {
@@ -90,6 +93,7 @@ class FromBox extends Component {
                 <FormItem>
                     <Button 
                         type="primary" 
+                        className="submit-btn"
                         loading={loading}
                         onClick={this.handleSubmit}>
                         Sign in
@@ -100,4 +104,5 @@ class FromBox extends Component {
     }
 }
 
-export default Form.create()(FromBox);
+FromBox = Form.create()(FromBox);
+export default FromBox;

@@ -1,4 +1,4 @@
-.login-form {
+.login-form-wrap {
     padding: 50px;
     width: 400px;
     height: 360px;
@@ -7,7 +7,7 @@
     text-align: center;
     box-shadow: 0px 0px 50px 10px #e2e2e2;
 
-    >.login-title {
+    .login-title {
         margin-bottom: 24px;
         font-size: 16px;
         font-weight: 700;
@@ -18,29 +18,12 @@
         }
     }
 
-    >.ant-form {
+    .login-form {
         width: 80%;
         margin: 0 auto;
 
-        .font {
-            font-size: 12px;
-            font-weight: 800;
-        }
-
-        .ant-btn-primary {
+        .submit-btn {
             width: 100%;
-
-            &:hover {
-                opacity: .95;
-            }
         }
-
-        // .ant-btn-clicked:after {
-        //     border: 0 solid #495060;
-        // }
-
-        // .ant-btn-loading:before {
-        //     display: none;
-        // }
     }
 }

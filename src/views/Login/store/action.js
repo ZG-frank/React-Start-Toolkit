@@ -1,6 +1,6 @@
 export const changeLoading = loading => (
     {
-        type:'LOADING',
-        loading:loading
+        type: 'LOADING',
+        loading: loading
     }
 )
