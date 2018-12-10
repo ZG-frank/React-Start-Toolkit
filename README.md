@@ -3,14 +3,22 @@ React Project Start Toolkit by React 16 + React-router v4 + Redux + Webpack 4 + 
 
 使用目前较新的技术栈搭建的 React 脚手架，包括 React 16.4.2、React-router v4、Redux、Webpack 4、Babel 7、路由动态分割和导入等。
 
-![react-start-toolkit](./React.png)
----------------------------------------------------------------
-[![React](https://img.shields.io/badge/react-^16.4.2-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
-[![Ant Design](https://img.shields.io/badge/ant--design-^3.9.0-yellowgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![Redux](https://img.shields.io/badge/redux-^4.0.0-orange.svg?style=flat-square)](https://github.com/reduxjs/redux)
-[![Webpack](https://img.shields.io/badge/webpack-^4.19.1-yellow.svg?style=flat-square)](https://github.com/webpack/webpack)
-[![Babel](https://img.shields.io/badge/babel-^7.0.0-blue.svg?style=flat-square)](https://github.com/babel/babel)
-[![React Router](https://img.shields.io/badge/react--router-^4.3.1-lightgrey.svg?style=flat-square)](https://github.com/ReactTraining/react-router)
+<div align=center> <img width="150" height="150" src="./React.png" /></div>
+
+<hr>
+<br>
+
+<div align="center">
+  <a href="https://github.com/facebook/react"><img src="https://img.shields.io/badge/react-^16.4.2-brightgreen.svg?style=flat-square" /></a>
+  <a href="https://github.com/webpack/webpack"><img src="https://img.shields.io/badge/webpack-^4.19.1-yellow.svg?style=flat-square" /></a>
+  <a href="https://github.com/reduxjs/redux"><img src="https://img.shields.io/badge/redux-^4.0.0-orange.svg?style=flat-square" /></a>
+  <a href="https://github.com/ReactTraining/react-router"><img src="https://img.shields.io/badge/react--router-^4.3.1-lightgrey.svg?style=flat-square" /></a>
+  <a href="https://github.com/ant-design/ant-design"><img src="https://img.shields.io/badge/ant--design-^3.9.0-yellowgreen.svg?style=flat-square" /></a>
+  <a href="https://github.com/babel/babel"><img src="https://img.shields.io/badge/babel-^7.0.0-blue.svg?style=flat-square" /></a>
+</div>
+
+<hr>
+<br>
 
 **演示地址：**[https://ZG-frank.github.io/react-start-toolkit](https://ZG-frank.github.io/react-start-toolkit/)
 
