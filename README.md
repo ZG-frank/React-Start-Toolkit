@@ -5,6 +5,9 @@ React Project Start Toolkit by React 16 + React-router v4 + Redux + Webpack 4 + 
 
 <div align=center> <img width="150" height="150" src="./React.png" /></div>
 
+<hr>
+<br>
+
 <div align="center">
   <a href="https://github.com/facebook/react"><img src="https://img.shields.io/badge/react-^16.4.2-brightgreen.svg?style=flat-square" /></a>
   <a href="https://github.com/webpack/webpack"><img src="https://img.shields.io/badge/webpack-^4.19.1-yellow.svg?style=flat-square" /></a>
