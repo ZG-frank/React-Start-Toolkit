@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Cookies from 'js-cookie';
 import { Layout } from 'antd';
+import Cookies from 'js-cookie';
 import Headers from '@/components/Headers';
 import SiderMenu from '@/components/SiderMenu';
 import Contents from '@/components/Contents';
