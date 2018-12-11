@@ -6,7 +6,6 @@ const initState = {
 }
 
 const ROOT = (state = initState , action) => {
-
     const { type, payload } = action;
 
     switch (type) {
