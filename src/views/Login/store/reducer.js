@@ -3,13 +3,13 @@ const initState = {
 }
 
 const loginReducer = (state = initState, action) =>{
-    const { loading } = action;
+    const { payload } = action;
 
     switch (action.type) {
         case 'LOADING':
             return {
                 ...state,
-                loading
+                loading: payload
             }
         default:
             return state;

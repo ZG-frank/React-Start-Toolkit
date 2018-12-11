@@ -11,7 +11,6 @@ import * as ROOT_action from '@/store/ROOT/action';
 const FormItem = Form.Item;
 
 @withRouter
-
 @connect(
     state => ({ ...state.Login }),
     dispatch => bindActionCreators({...ROOT_action, ...action}, dispatch)
