@@ -67,8 +67,7 @@ class SiderMenu extends Component {
                     onOpenChange={this.handleSubMenuChange}
                 >
                     {
-                        menuConfig.map(item =>
-                            item.list && item.list.length > 0 ?
+                        menuConfig.map(item => item.list && item.list.length > 0 ?
                             <SubMenu 
                                 key={item.key} 
                                 title={
