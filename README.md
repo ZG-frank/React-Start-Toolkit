@@ -55,6 +55,6 @@ npm run server
 
 - [ ] 内容更丰富
 - [x] 优化组件和工程目录
-- [ ] 优化Webpack配置
+- [x] 优化Webpack配置
 - [ ] 加入Mobx版
-- [ ] 加入原生Context API版
+- [ ] 加入原生Context API版，不一定做
